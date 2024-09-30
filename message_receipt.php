@@ -12,8 +12,10 @@
 
     <div class="container-receipt">
         <h2>Your Submitted Message</h2>
-
+        
+        
         <?php
+        //GET request
         if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['recipient']) && isset($_GET['message'])) {
             $name = htmlspecialchars($_GET['name']);
             $email = htmlspecialchars($_GET['email']);
